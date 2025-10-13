@@ -44,7 +44,7 @@ public class Slingshot : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Dynamic;
 
             // Turn gravity back on when launched
-            rb.gravityScale = 1;
+            rb.gravityScale = 3;
 
             Vector2 releaseDir = startPos - rb.position;
             rb.linearVelocity = releaseDir * launchPower;
