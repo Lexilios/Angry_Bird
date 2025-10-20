@@ -68,7 +68,8 @@ public class Enemy : MonoBehaviour
         GameManager.Instance.AddScore(scoreValue);
 
         // Notify LevelController
-        LevelController levelController = FindObjectOfType<LevelController>();
+        LevelController levelController = FindFirstObjectByType<LevelController>();
+        
         if (levelController != null)
             levelController.OnEnemyDestroyed();
 

@@ -6,8 +6,11 @@ public class LevelController : MonoBehaviour
 
     void Start()
     {
-        totalEnemies = FindObjectsOfType<Enemy>().Length;
+        totalEnemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;
     }
+
+    
+
 
     public void OnEnemyDestroyed()
     {
