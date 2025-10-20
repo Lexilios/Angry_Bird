@@ -25,6 +25,12 @@ public class GameManager : MonoBehaviour
         }
 
         currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+
+        Scene current = SceneManager.GetActiveScene();
+        if (current.buildIndex == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
