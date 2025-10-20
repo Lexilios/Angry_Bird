@@ -168,4 +168,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344d2cebff8748848a6aca1dbda25b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YellowBird
-  speedBoost: 5
+  speedBoost: 2
