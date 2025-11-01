@@ -5,10 +5,15 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+
+
     [Header("Game State")]
     public int currentLevelIndex = 0;
     public int currentScore = 0;
     public int highScore = 0;
+
+
+    public string lastPlayedLevel;
 
 
     void Awake()
@@ -80,6 +85,9 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("All levels complete!");
         }
+
+
+        lastPlayedLevel = SceneManager.GetActiveScene().name;
     }
 
     public void RestartLevel()
