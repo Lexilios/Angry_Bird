@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BirdQueue : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class BirdQueue : MonoBehaviour
 
     private Queue<GameObject> birds = new Queue<GameObject>();
 
+    //public UnityEvent<GameObject> LouisNextBird; 
+
     void Start()
     {
         // Load all prefabs into a queue
@@ -17,10 +20,12 @@ public class BirdQueue : MonoBehaviour
             birds.Enqueue(birdPrefab);
 
         LoadNextBird();
+
     }
 
     public void LoadNextBird()
     {
+
         if (birds.Count == 0)
         {
             Debug.Log("No more birds left!");
@@ -31,7 +36,7 @@ public class BirdQueue : MonoBehaviour
         GameObject birdObj = Instantiate(birds.Dequeue(), spawnPoint.position, Quaternion.identity);
         Bird bird = birdObj.GetComponent<Bird>();
         slingshot.currentBird = bird;
-
+        //LouisNextBird.Invoke(birdObj);
         Debug.Log($"Loaded new bird: {bird.name}");
     }
 
