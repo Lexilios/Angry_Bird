@@ -231,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 100464109}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -0.0071, z: 0}
+  m_LocalPosition: {x: 0.03, y: -0.12, z: 0}
   m_LocalScale: {x: 18.53271, y: 9.931924, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 194254453}
   - component: {fileID: 194254452}
   - component: {fileID: 194254451}
+  - component: {fileID: 194254454}
   m_Layer: 0
   m_Name: Block (3)
   m_TagString: Untagged
@@ -402,6 +403,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &194254454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194254449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d329e141368e71b47ac40d7525686fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableBloc
+  rigidBody: {fileID: 0}
+  visual: {fileID: 0}
+  OkayColor: {r: 0.627451, g: 0.3215686, b: 0.1764706, a: 1}
+  WeakColor: {r: 0.5, g: 0.24823113, b: 0.06839624, a: 1}
+  _broken: 0
+  pointDeVie: 30
+  MaxPointDeVie: 30
 --- !u!1001 &267296645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -505,12 +525,12 @@ PrefabInstance:
       objectReference: {fileID: 267296647}
     - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
       propertyPath: birdPrefabs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
       propertyPath: 'birdPrefabs.Array.data[0]'
       value: 
-      objectReference: {fileID: 8022729772653039995, guid: ad29fef730496724b8aec5f3f605ccc8, type: 3}
+      objectReference: {fileID: 2188215850000833317, guid: 6d2353b5705be34499e3e399ad049428, type: 3}
     - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
       propertyPath: 'birdPrefabs.Array.data[1]'
       value: 
@@ -520,6 +540,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4351606255778934163, guid: 8ea77bd8a2d06234485fed038e688774, type: 3}
     - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
+<<<<<<< Updated upstream
       propertyPath: LouisNextBird.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -555,6 +576,11 @@ PrefabInstance:
       propertyPath: LouisNextBird.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
+=======
+      propertyPath: 'birdPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4351606255778934163, guid: 8ea77bd8a2d06234485fed038e688774, type: 3}
+>>>>>>> Stashed changes
     - target: {fileID: 7671132149974352997, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23778
@@ -596,7 +622,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8297945510527017462, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
@@ -987,6 +1014,7 @@ GameObject:
   - component: {fileID: 1040177453}
   - component: {fileID: 1040177452}
   - component: {fileID: 1040177451}
+  - component: {fileID: 1040177454}
   m_Layer: 0
   m_Name: Block (1)
   m_TagString: Untagged
@@ -1140,6 +1168,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
 --- !u!1 &1070779661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,11 +1188,15 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1070779662
+=======
+--- !u!114 &1040177454
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1070779661}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1247,6 +1280,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_GameObject: {fileID: 1040177449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d329e141368e71b47ac40d7525686fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableBloc
+  rigidBody: {fileID: 0}
+  visual: {fileID: 0}
+  OkayColor: {r: 0.627451, g: 0.3215686, b: 0.1764706, a: 1}
+  WeakColor: {r: 0.5, g: 0.24823113, b: 0.06839624, a: 1}
+  _broken: 0
+  pointDeVie: 30
+  MaxPointDeVie: 30
+>>>>>>> Stashed changes
 --- !u!1 &1371052535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1472,7 @@ GameObject:
   - component: {fileID: 1725357765}
   - component: {fileID: 1725357764}
   - component: {fileID: 1725357763}
+  - component: {fileID: 1725357766}
   m_Layer: 0
   m_Name: Block (5)
   m_TagString: Untagged
@@ -1577,6 +1626,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1725357766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725357761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405882c405f62bb48ae81f7a2f8bad63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableBlocStone
+  rigidBody: {fileID: 0}
+  visual: {fileID: 0}
+  OkayColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  WeakColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  _broken: 0
+  pointDeVie: 30
+  MaxPointDeVie: 30
 --- !u!1 &1764082981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1657,7 @@ GameObject:
   - component: {fileID: 1764082985}
   - component: {fileID: 1764082984}
   - component: {fileID: 1764082983}
+  - component: {fileID: 1764082986}
   m_Layer: 0
   m_Name: Block (4)
   m_TagString: Untagged
@@ -1742,6 +1811,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
 --- !u!1 &1820457913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,11 +1831,15 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1820457914
+=======
+--- !u!114 &1764082986
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1820457913}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1807,6 +1881,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_GameObject: {fileID: 1764082981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d329e141368e71b47ac40d7525686fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableBloc
+  rigidBody: {fileID: 0}
+  visual: {fileID: 0}
+  OkayColor: {r: 0.627451, g: 0.3215686, b: 0.1764706, a: 1}
+  WeakColor: {r: 0.5, g: 0.24823113, b: 0.06839624, a: 1}
+  _broken: 0
+  pointDeVie: 30
+  MaxPointDeVie: 30
+>>>>>>> Stashed changes
 --- !u!1 &1838101135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1908,7 @@ GameObject:
   - component: {fileID: 1838101139}
   - component: {fileID: 1838101138}
   - component: {fileID: 1838101137}
+  - component: {fileID: 1838101140}
   m_Layer: 0
   m_Name: Block (2)
   m_TagString: Untagged
@@ -1972,6 +2062,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1838101140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838101135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5da938dd6a6c534099259dd88a00346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableBlocGlass
+  rigidBody: {fileID: 0}
+  visual: {fileID: 0}
+  OkayColor: {r: 0.529, g: 0.808, b: 0.922, a: 1}
+  WeakColor: {r: 0.071, g: 0.569, b: 1, a: 1}
+  _broken: 0
+  pointDeVie: 10
+  MaxPointDeVie: 10
 --- !u!1 &2050240350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +2093,7 @@ GameObject:
   - component: {fileID: 2050240354}
   - component: {fileID: 2050240353}
   - component: {fileID: 2050240352}
+  - component: {fileID: 2050240355}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -2137,6 +2247,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2050240355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050240350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d329e141368e71b47ac40d7525686fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableBloc
+  rigidBody: {fileID: 0}
+  visual: {fileID: 0}
+  OkayColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  WeakColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  _broken: 0
+  pointDeVie: 30
+  MaxPointDeVie: 30
 --- !u!1001 &7828071113786099734
 PrefabInstance:
   m_ObjectHideFlags: 0
