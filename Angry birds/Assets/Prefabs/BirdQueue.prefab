@@ -160,6 +160,9 @@ MonoBehaviour:
   - birdPrefab: {fileID: 5771287190033479301, guid: 6d2353b5705be34499e3e399ad049428, type: 3}
     count: 1
     icon: {fileID: -8822975779198093247, guid: 231f2e8117273c54b975a8f6171665ad, type: 3}
+  - birdPrefab: {fileID: 2542762939256374212, guid: 256cda14c75e5e6449f05f3de5a285e8, type: 3}
+    count: 1
+    icon: {fileID: 1698142021544211858, guid: e1d0cb52994ace74597e4971f9ef37f6, type: 3}
   slingshotSpawn: {fileID: 0}
   slingshot: {fileID: 0}
   buttonPrefab: {fileID: 3601540638304068315, guid: ed693a61e7e9beb41a5f0ef747b334af, type: 3}
