@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using System;
 
 public class BirdQueue : MonoBehaviour
 {
@@ -110,5 +111,41 @@ public class BirdQueue : MonoBehaviour
         }
 
         slingshot.currentBird = null;
+
+        int remaining = GetTotalRemainingBirds();
+
+
+        StartCoroutine(DelayedChecks(remaining));
+
+        
     }
+
+    public int GetTotalRemainingBirds()
+    {
+        int total = 0;
+        foreach (var count in remainingBirds.Values)
+            total += count;
+        return total;
+
+       
+    }
+
+
+    private IEnumerator DelayedChecks(int remaining)
+    {
+        // First quick check after 2 seconds
+        yield return new WaitForSeconds(2f);
+        GameManager.Instance.CheckLevelComplete();
+
+        // Second deeper check after another 5 seconds (total 7)
+        yield return new WaitForSeconds(5f);
+        GameManager.Instance.CheckLevelComplete();
+
+        // Finally, check for game over
+        if (remaining <= 0)
+            GameManager.Instance.CheckGameOver(remaining);
+    }
+
+
+
 }

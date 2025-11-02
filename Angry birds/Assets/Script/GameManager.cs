@@ -1,3 +1,4 @@
+using UnityEditor.AssetImporters;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -123,9 +124,14 @@ public class GameManager : MonoBehaviour
         if (remainingBirds <= 0 && enemies.Length > 0 )
         {
             Debug.Log("Game Over!");
-            
+
+            new WaitForSeconds(7);
+
             SceneManager.LoadScene("GameOverMenu");
-        }
+            currentScore = 0;
+            currentLevelIndex = 0;
+
+}
     }
 
 

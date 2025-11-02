@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2429194634403407815}
   - component: {fileID: 7321295708763247551}
   - component: {fileID: 5771287190033479301}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BigBird
   m_TagString: Player
   m_Icon: {fileID: 0}

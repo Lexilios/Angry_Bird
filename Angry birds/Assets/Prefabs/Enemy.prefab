@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6849336244300719557}
   - component: {fileID: 3837484746149867109}
   - component: {fileID: 8999114614727513186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,6 +172,6 @@ MonoBehaviour:
   minImpactToDamage: 2
   damageMultiplier: 10
   scoreValue: 500
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1711327094600241981}
   damageFlashColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1

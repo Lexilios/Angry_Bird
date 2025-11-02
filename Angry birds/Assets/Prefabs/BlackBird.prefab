@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4667034823016623911}
   - component: {fileID: 3816457349628408409}
   - component: {fileID: 6106107192560446468}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BlackBird
   m_TagString: Player
   m_Icon: {fileID: 0}

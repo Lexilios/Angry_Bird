@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6849336244300719557}
   - component: {fileID: 3837484746149867109}
   - component: {fileID: 5177308124917143036}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: YellowBird
   m_TagString: Player
   m_Icon: {fileID: 0}
