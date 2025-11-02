@@ -19,8 +19,10 @@ public class Bird : MonoBehaviour
     {
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = 1;
-        rb.linearVelocity = direction * force;
+        rb.linearVelocity = direction * force / rb.mass ;
         isLaunched = true;
+
+        Invoke(nameof(DestroySelf), 7f);
     }
 
     protected virtual void ActivateAbility()
@@ -43,5 +45,10 @@ public class Bird : MonoBehaviour
             var bloc = collision.gameObject.GetComponent<BreakableBloc>();
             bloc.TakeDamage(rb.linearVelocity.magnitude);
         }
+    }
+
+    void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }

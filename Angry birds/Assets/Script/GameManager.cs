@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public int highScore = 0;
 
 
-    public string lastPlayedLevel;
+    public int lastPlayedLevel;
 
 
     void Awake()
@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-        lastPlayedLevel = SceneManager.GetActiveScene().name;
+        lastPlayedLevel = SceneManager.GetActiveScene().buildIndex;
     }
 
     public void RestartLevel()

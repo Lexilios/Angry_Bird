@@ -1057,6 +1057,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!212 &1315862718 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1711327094600241981, guid: 40238026210131e499e8f71e28991ffa, type: 3}
+  m_PrefabInstance: {fileID: 7130466912902417031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1320241040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,9 +1072,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1320241045}
   - component: {fileID: 1320241044}
-  - component: {fileID: 1320241043}
-  - component: {fileID: 1320241042}
-  - component: {fileID: 1320241041}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1077,61 +1079,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1320241041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320241040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e6fed47da1ee7b45b04eff3d37d37c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slingshot
-  maxStretch: 3
-  launchPower: 10
-  currentBird: {fileID: 0}
-  birdQueue: {fileID: 0}
---- !u!114 &1320241042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320241040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 447af8147a05bef44bf059b73f8e4a94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bird
---- !u!50 &1320241043
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320241040}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1320241044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1217,30 +1164,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BirdQueue
       objectReference: {fileID: 0}
-    - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
-      propertyPath: slingshot
-      value: 
-      objectReference: {fileID: 1342994496}
-    - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 1342994497}
-    - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
-      propertyPath: birdPrefabs.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
-      propertyPath: 'birdPrefabs.Array.data[0]'
-      value: 
-      objectReference: {fileID: 4351606255778934163, guid: 8ea77bd8a2d06234485fed038e688774, type: 3}
-    - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
-      propertyPath: 'birdPrefabs.Array.data[1]'
-      value: 
-      objectReference: {fileID: 4351606255778934163, guid: 8ea77bd8a2d06234485fed038e688774, type: 3}
-    - target: {fileID: 6857146375021009138, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
-      propertyPath: 'birdPrefabs.Array.data[2]'
-      value: 
-      objectReference: {fileID: 4351606255778934163, guid: 8ea77bd8a2d06234485fed038e688774, type: 3}
     - target: {fileID: 7671132149974352997, guid: de9e8aef7d7b194409fcb7fac4ea5836, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23778
@@ -1362,22 +1285,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5215363335e474497ca5ba98c1c96f, type: 3}
---- !u!114 &1342994496 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5783808067634075687, guid: 0b5215363335e474497ca5ba98c1c96f, type: 3}
-  m_PrefabInstance: {fileID: 1342994495}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e6fed47da1ee7b45b04eff3d37d37c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slingshot
---- !u!4 &1342994497 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5402986728802998315, guid: 0b5215363335e474497ca5ba98c1c96f, type: 3}
-  m_PrefabInstance: {fileID: 1342994495}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1544127769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,6 +1832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8999114614727513186, guid: 40238026210131e499e8f71e28991ffa, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1315862718}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
