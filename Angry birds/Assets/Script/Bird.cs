@@ -6,6 +6,7 @@ public class Bird : MonoBehaviour
     protected Rigidbody2D rb;
     protected bool isLaunched = false;
     protected bool abilityUsed = false;
+    protected bool canUseAbility = true;
 
     protected virtual void Start()
     {
@@ -27,12 +28,11 @@ public class Bird : MonoBehaviour
 
     protected virtual void ActivateAbility()
     {
-        // Empty: subclasses override this
     }
 
     protected virtual void Update()
     {
-        if (isLaunched && !abilityUsed && Input.GetMouseButtonDown(0))
+        if (isLaunched && canUseAbility && !abilityUsed && Input.GetMouseButtonDown(0))
         {
             ActivateAbility();
         }
@@ -40,6 +40,8 @@ public class Bird : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        canUseAbility = false;
+
         if (collision.gameObject.GetComponent<BreakableBloc>())
         {
             var bloc = collision.gameObject.GetComponent<BreakableBloc>();

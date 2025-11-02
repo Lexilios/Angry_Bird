@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     public int highScore = 0;
 
 
-    public int lastPlayedLevel;
 
 
     void Awake()
@@ -68,6 +67,7 @@ public class GameManager : MonoBehaviour
     public void LoadNextLevel()
     {
         int nextLevelIndex = currentLevelIndex + 1;
+        currentLevelIndex = nextLevelIndex;
 
         Debug.Log($"Trying to load next level: {nextLevelIndex}");
 
@@ -82,7 +82,6 @@ public class GameManager : MonoBehaviour
         }
 
 
-        lastPlayedLevel = SceneManager.GetActiveScene().buildIndex;
     }
 
     public void RestartLevel()
@@ -129,12 +128,9 @@ public class GameManager : MonoBehaviour
 
             SceneManager.LoadScene("GameOverMenu");
             currentScore = 0;
-            currentLevelIndex = 0;
-
-}
+            
+        }
     }
-
-
 
 }
 

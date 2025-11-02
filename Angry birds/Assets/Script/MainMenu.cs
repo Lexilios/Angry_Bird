@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,8 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Starting Game - Loading Level 1");
         SceneManager.LoadScene(1); // Level1 is usually index 1
+
+        GameManager.Instance.currentLevelIndex = 1;
     }
 
     public void OpenLevelSelect()
@@ -30,7 +33,6 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quitting Game");
         Application.Quit();
 
-        // Note: Quit() won't close the game in the editor
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
@@ -40,5 +42,6 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log($"Loading Level {index}");
         SceneManager.LoadScene(index);
+        GameManager.Instance.currentLevelIndex = index;
     }
 }

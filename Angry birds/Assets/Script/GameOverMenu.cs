@@ -5,10 +5,10 @@ public class GameOverMenu : MonoBehaviour
 {
     public void RestartLevel()
     {
-        if (GameManager.Instance.lastPlayedLevel != 0)
+        if (GameManager.Instance.currentLevelIndex != 0)
         {
-            Debug.Log($"Restarting level: {GameManager.Instance.lastPlayedLevel}");
-            SceneManager.LoadScene(GameManager.Instance.lastPlayedLevel);
+            Debug.Log($"Restarting level: {GameManager.Instance.currentLevelIndex}");
+            SceneManager.LoadScene(GameManager.Instance.currentLevelIndex);
         }
         else
         {
