@@ -29,13 +29,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
-
-        Scene current = SceneManager.GetActiveScene();
-        if (current.buildIndex == 0)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
     private void Start()
@@ -108,8 +102,36 @@ public class GameManager : MonoBehaviour
         Debug.Log("Quitting Game...");
         Application.Quit();
     }
+
+    public void CheckLevelComplete()
+    {
+        // Assuming you have an EnemyManager or a way to get all enemies
+        Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+
+        if (enemies.Length == 0)
+        {
+            // Delay a little if you want (optional)
+            Debug.Log("Level Complete! Loading next level...");
+            LoadNextLevel();
+        }
+    }
+
+    public void CheckGameOver(int remainingBirds)
+    {
+        Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+
+        if (remainingBirds <= 0 && enemies.Length > 0 )
+        {
+            Debug.Log("Game Over!");
+            
+            SceneManager.LoadScene("GameOverMenu");
+        }
+    }
+
+
+
 }
 
-    
 
-    
+
+

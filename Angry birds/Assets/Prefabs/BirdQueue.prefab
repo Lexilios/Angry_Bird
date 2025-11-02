@@ -149,14 +149,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BirdQueue
   birdEntries:
   - birdPrefab: {fileID: 1431066653969160757, guid: ad29fef730496724b8aec5f3f605ccc8, type: 3}
-    count: 5
+    count: 1
     icon: {fileID: -4158021191424116488, guid: 3a5bef196fa0d9c4cb6f99173fd313f9, type: 3}
   - birdPrefab: {fileID: 6106107192560446468, guid: c718e445d1d9c7d489aa03191677641c, type: 3}
-    count: 5
+    count: 1
     icon: {fileID: 5422149271494564686, guid: 4b6dde2cc1aa6f0499c3434e8cc06603, type: 3}
   - birdPrefab: {fileID: 5177308124917143036, guid: 8ea77bd8a2d06234485fed038e688774, type: 3}
-    count: 5
+    count: 1
     icon: {fileID: 1707664315910560469, guid: 5eaf2a3740b99d9449d50ce6185667f8, type: 3}
+  - birdPrefab: {fileID: 5771287190033479301, guid: 6d2353b5705be34499e3e399ad049428, type: 3}
+    count: 1
+    icon: {fileID: -8822975779198093247, guid: 231f2e8117273c54b975a8f6171665ad, type: 3}
   slingshotSpawn: {fileID: 0}
   slingshot: {fileID: 0}
   buttonPrefab: {fileID: 3601540638304068315, guid: ed693a61e7e9beb41a5f0ef747b334af, type: 3}
