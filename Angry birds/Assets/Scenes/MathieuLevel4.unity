@@ -1215,7 +1215,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.65
+  orthographic size: 6.92
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1337,11 +1337,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1685951906061025891, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.04
+      value: 12.37
       objectReference: {fileID: 0}
     - target: {fileID: 1685951906061025891, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4
+      value: -3.42
       objectReference: {fileID: 0}
     - target: {fileID: 1685951906061025891, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1378,6 +1378,14 @@ PrefabInstance:
     - target: {fileID: 7295553224625206117, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
       propertyPath: m_Name
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535402662540443680, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
+      propertyPath: m_Size.y
+      value: 12.324731
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535402662540443680, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
+      propertyPath: m_Offset.y
+      value: 5.6623645
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

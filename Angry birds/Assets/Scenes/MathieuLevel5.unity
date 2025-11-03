@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1685951906061025891, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.05
+      value: 12.81
       objectReference: {fileID: 0}
     - target: {fileID: 1685951906061025891, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -170,6 +170,14 @@ PrefabInstance:
     - target: {fileID: 7295553224625206117, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
       propertyPath: m_Name
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535402662540443680, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
+      propertyPath: m_Size.y
+      value: 13.022893
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535402662540443680, guid: de1314698a4a84847933ae1a26946bc0, type: 3}
+      propertyPath: m_Offset.y
+      value: 6.0114465
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1454,7 +1462,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.95
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1479,7 +1487,7 @@ Transform:
   m_GameObject: {fileID: 1484524681}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.99, y: 2.17, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
